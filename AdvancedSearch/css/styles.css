@@ -1,0 +1,21 @@
+.form-input {
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.form-input:focus {
+    outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.form-input:focus+.form-label {
+    margin-top: -130px;
+}
+
+.form-label {
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -85px;
+    z-index: -20;
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+}

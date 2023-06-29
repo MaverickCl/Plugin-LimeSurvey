@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+/* tooltip need to be above handsontable */
+
+.ht_clone_left,
+.ht_clone_top,
+.ht_clone_top_left_corner {
+    z-index: 0;
+}
+
+.width-20 {
+    width: 20%;
+}
+
+:root {
+    --green-soft: rgb(227, 255, 229);
+    --green-punsh: rgb(86, 241, 97);
+    --space-grey: rgb(198, 198, 198);
+    --dt-padding: 12px;
+    --dt-padding-s: 6px;
+    --dt-padding-xs: 3px;
+    --dt-border-radius: 3px;
+    --dt-border-color: var(--space-grey);
+    --dt-bg-color: var(--green-soft);
+    --dt-hover-cell-color: var(--green-soft);
+    --dt-focus-color: var(--green-soft);
+    --dt-input-bg-color: var(--space-grey);
+}
+
+.material-icons.green {
+    font-size: 15px;
+    color: var(--green-punsh);
+}
+
+.datatable-container {
+    border-radius: var(--dt-border-radius);
+    width: auto;
+    margin: 0 auto;
+}
+
+.datatable-container .header-tools {
+    border-bottom: solid 2px var(--dt-border-color);
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: center;
+}
+
+.datatable-container .header-tools .search {
+    width: 30%;
+}
+
+.datatable-container .header-tools .search .search-input {
+    display: block;
+    border-radius: var(--dt-border-radius);
+    border: solid 2px var(--dt-border-color);
+}
+
+.datatable-container .header-tools .tools {
+    width: 70%;
+}
+
+.datatable-container .header-tools .tools button {
+    background-color: white;
+    border-radius: var(--dt-border-radius);
+    border: solid 2px var(--dt-border-color);
+}
+
+.datatable-container .footer-tools {
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: center;
+}
+
+.datatable-container .footer-tools .list-items {
+    width: 50%;
+}
+
+.datatable-container .footer-tools .pages {
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+}
+
+.datatable-container .footer-tools .pages ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.datatable-container .footer-tools .pages ul li {
+    display: inline-flex;
+    margin: 0 var(--dt-padding-xs);
+    align-items: center;
+}
+
+.datatable-container .footer-tools .pages button {
+    background-color: white;
+    border: 0;
+}
+
+.datatable-container .datatable tbody tr:hover {
+    background-color: var(--green-soft);
+}

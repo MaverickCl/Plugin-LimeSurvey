@@ -1,0 +1,52 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<body>
+<div class='container-fluid mb-3'>
+    <h3 class='pagetitle'>Advanced Search</h3>
+    <div class='mb-5'>
+                <div class="row mb-2">
+                    <input id="search-field" class='form-control col-10 ' style='width:250px !important;' type='text' placeholder="Ingrese Token"></input>
+                    <button type="submit" class="btn btn-primary col-2" onclick='LS.plugin.AdvancedSearch.loadData();'>Search</button>
+                </div>
+                
+    </div>
+</div>
+<br>
+<br>
+
+
+
+        {{YII_CSRF_TOKEN}}
+
+<div class='datatable-container mt-5'>
+   
+    <table class="table datatable" id="table">
+        <thead>
+            <tr>
+                <th >Token</th>
+                <th >Nombre</th>
+                <th >Apellido</th>
+                <th >Email</th>
+                <th >Id Encuesta</th>
+                <th >Nombre de encuesta</th>
+            </tr>
+        </thead>
+        <tbody id="data-container">
+        
+        </tbody>
+    </table>
+    
+    
+</div>
+</body>
+
+<script>
+// Namespace
+var LS = LS || {};
+LS.plugin = LS.plugin || {};
+LS.plugin.AdvancedSearch = LS.plugin.AdvancedSearch || {};
+
+LS.plugin.AdvancedSearch.getSurveysLink = '{{getSurveysLink}}';
+
+
+</script>
